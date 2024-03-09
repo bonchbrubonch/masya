@@ -1,0 +1,31 @@
+/*start select=====================*/
+.products__filter {
+  .select2-selection__arrow {
+    display: none;
+  }
+
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0;
+  }
+
+  .select2-container--default .select2-selection--single {
+    border: none;
+    background-color: transparent !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #3e3e3e;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: rgb(212, 240, 192);
+  color: #3e3e3e;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #f7f7f8;
+}
+/*end select=====================*/
