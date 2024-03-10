@@ -1459,7 +1459,7 @@ body.lock::after {
     font-size: 0;
   }
   .menu {
-    height: 100vh;
+    height: calc(100vh - 140px);
     bottom: 0;
   }
   .info {
@@ -1627,5 +1627,6 @@ body.lock::after {
   }
   .menu {
     top: 140px;
+    min-height: auto;
   }
 }
