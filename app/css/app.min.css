@@ -1629,4 +1629,7 @@ body.lock::after {
     top: 140px;
     min-height: auto;
   }
+  .menu .header__languege-child {
+    display: none;
+  }
 }

@@ -233,6 +233,9 @@
   .menu {
     top: 140px;
     min-height: auto;
+    .header__languege-child{
+      display: none;
+    }
   }
 
 }
