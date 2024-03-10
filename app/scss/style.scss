@@ -196,6 +196,41 @@
   &__basket {
     margin: 0 25px 0 auto;
   }
+
+  nav {
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: #3e3e3e;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 120%;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: linear .2s;
+
+      &:hover {
+        text-decoration-color: #3e3e3e;
+      }
+    }
+
+    li+li {
+      margin: 0 0 0 25px;
+    }
+  }
+
+  &--main {
+    .header__menu-btn {
+      display: none;
+    }
+
+    .header__languege {
+      margin: 0 0 0 auto;
+    }
+  }
+
 }
 
 /*end header=========================*/
@@ -245,51 +280,6 @@
   .footer__soc {
     margin: 0;
   }
-}
-
-.header__languege {
-  width: 76px;
-}
-
-.header__languege-child {
-  padding: 0 20px 0 13px;
-  position: relative;
-  height: 48px;
-  cursor: pointer;
-
-  &:hover {
-    .header__languege-dropdown {
-      z-index: 10;
-      width: 100%;
-      left: 0;
-      top: 48px;
-      padding: 0 0 0 13px;
-
-      li {
-        padding: 5px 0;
-      }
-    }
-
-    .header__languege-dropdown-wrap {
-      background-color: #fffff5;
-      display: block;
-      z-index: 10;
-      width: 100%;
-      left: 0;
-      top: 39px;
-      padding: 13px 0 13px 0;
-      border-radius: 0 0 5px 5px;
-    }
-  }
-
-  &>span {
-    line-height: 48px;
-  }
-}
-
-.header__languege-dropdown-wrap {
-  position: absolute;
-  display: none;
 }
 
 /*end menu==========*/
@@ -445,7 +435,8 @@
   }
 
   .mySwiper {
-    margin: 0 0 0 -30px;
+    padding: 15px 0 0 0;
+    margin: -15px 0 0 -30px;
   }
 }
 
@@ -464,8 +455,12 @@
   border-radius: 35px;
   background-color: #b7d8a1;
   position: relative;
+  height: auto;
 
   &__sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -584,6 +579,131 @@
 
 /*end info==============*/
 
+/*start main-box================*/
+.main-img {
+  padding: 30px 0 50px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 254px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.main-box {
+  padding: 0 0 20px 0;
+  &__inner {
+    display: flex;
+    margin: 0 0 0 -30px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    height: 580px;
+    align-items: center;
+    width: calc(50% - 30px);
+    margin: 0 0 0 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    background-color: #FFFFF5;
+    border-radius: 200px;
+    padding: 100px 35px 75px;
+    text-align: center;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      width: 20px;
+      height: 20px;
+      background-color: #75c6a5;
+      border-radius: 50%;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../images/dest/content/card-before.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      height: calc(100% - 20px);
+      width: calc(100% - 20px);
+    }
+  }
+
+  h3 {
+    margin: 0 0 25px 0;
+    color: #3e3e3e;
+    font-family: "Marck Script", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+
+  }
+
+  .btn {
+    margin: 0 0 28px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 0 45px 0;
+    transition: linear .2s;
+    position: relative;
+    z-index: 1;
+    &:hover{
+      color: #61B291;
+    }
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    color: #3e3e3e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    svg{
+      margin: 0 5px 0 0;
+    }
+  }
+}
+
+/*end main-box================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*start footer======================*/
 .footer {
   padding: 64px 0 20px;
@@ -645,6 +765,10 @@
 
   &__mid-box {
     display: flex;
+
+    a:hover .footer__mid-img {
+      background-color: #75C6A5;
+    }
   }
 
   &__mid-img {
@@ -656,6 +780,8 @@
     height: 32px;
     background-color: #F7F7F8;
     border-radius: 50%;
+    transition: linear .2s;
+
   }
 
   &__soc {
@@ -666,24 +792,6 @@
       font-size: 24px;
       font-weight: 500;
       line-height: 120%;
-    }
-
-    ul {
-      display: flex;
-
-      li+li {
-        margin: 0 0 0 15px;
-      }
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        background-color: #F7F7F8;
-        border-radius: 50%;
-      }
     }
   }
 
