@@ -27,9 +27,18 @@ var swiper = new Swiper('.type-slider', {
   loop: true,
   spaceBetween: 10,
   autoplay: {
-    centeredSlides: true,
     delay: 2500,
-    disableOnInteraction: false,
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
   },
   navigation: {
     nextEl: ".swiper-button-next",
