@@ -195,6 +195,22 @@
 
   &__basket {
     margin: 0 25px 0 auto;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 8px;
+      color: #fffff5;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 100%;
+      width: fit-content;
+      height: 17px;
+      min-width: 17px;
+      border-radius: 50%;
+      background-color: #61B291;
+    }
   }
 
   nav {
@@ -228,6 +244,16 @@
 
     .header__languege {
       margin: 0 0 0 auto;
+    }
+    .social{
+      a{
+        background-color: transparent !important;
+        &:hover{
+          svg path{
+            fill: #61B291;
+          }
+        }
+      }
     }
   }
 
@@ -291,7 +317,7 @@
   position: relative;
   overflow: hidden;
   height: 45px;
-
+  padding: 0 50px;
   button {
     padding: 0;
     display: flex;
@@ -304,7 +330,8 @@
     padding: 9.5px 14px 9.5px 10px;
     border-radius: 12px;
     transition: linear .2s;
-
+    white-space: nowrap;
+    margin: 0 auto;
     svg {
       margin: 0 15px 0 0;
     }
@@ -315,7 +342,6 @@
   }
 
   .swiper-slide {
-    width: fit-content !important;
     display: flex;
   }
 
@@ -324,9 +350,9 @@
     position: absolute;
     left: 0;
     height: 100%;
-    width: 60px;
+    width: 40px;
     bottom: 0;
-    background-color: #fff;
+    background-color: #FFFFF5;
     z-index: 2;
   }
 
@@ -335,9 +361,9 @@
     position: absolute;
     right: 0;
     height: 100%;
-    width: 60px;
+    width: 40px;
     bottom: 0;
-    background-color: #fff;
+    background-color: #FFFFF5;
     z-index: 2;
   }
 }
@@ -465,7 +491,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: -9px;
-    padding: 4px 8px;
+    padding: 2px 8px;
     color: #fffff5;
     font-size: 12px;
     font-weight: 400;
@@ -474,7 +500,7 @@
     background-color: rgb(236, 187, 181);
     text-align: center;
     width: fit-content;
-    height: 18px;
+    height: 18px !important;
   }
 
   h3 {
@@ -488,6 +514,7 @@
   }
 
   p {
+    padding: 0 15px;
     margin: 0 0 5px 0;
     color: #fffff5;
     font-family: "Marck Script", cursive;
@@ -594,6 +621,7 @@
 
 .main-box {
   padding: 0 0 20px 0;
+
   &__inner {
     display: flex;
     margin: 0 0 0 -30px;
@@ -620,7 +648,8 @@
     border-radius: 200px;
     padding: 100px 35px 75px;
     text-align: center;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       left: 50%;
@@ -631,19 +660,20 @@
       background-color: #75c6a5;
       border-radius: 50%;
     }
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       background-image: url("../images/dest/content/card-before.png");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: center;
-      top: 10px;
-      left: 10px;
-      bottom: 10px;
-      right: 10px;
-      height: calc(100% - 20px);
-      width: calc(100% - 20px);
+      top: 15px;
+      left: 15px;
+      bottom: 15px;
+      right: 15px;
+      height: calc(100% - 30px);
+      width: calc(100% - 30px);
     }
   }
 
@@ -669,7 +699,8 @@
     transition: linear .2s;
     position: relative;
     z-index: 1;
-    &:hover{
+
+    &:hover {
       color: #61B291;
     }
   }
@@ -681,7 +712,8 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 120%;
-    svg{
+
+    svg {
       margin: 0 5px 0 0;
     }
   }

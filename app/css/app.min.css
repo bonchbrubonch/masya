@@ -501,6 +501,12 @@ body.lock::after {
   background-color: #75C6A5;
 }
 
+.social svg path {
+  -webkit-transition: linear .2s;
+  -o-transition: linear .2s;
+  transition: linear .2s;
+}
+
 /*end social===========*/
 /*start languege============*/
 .header__languege {
@@ -636,12 +642,20 @@ body.lock::after {
   color: #61b291;
   font-size: 18px;
   border-radius: 50%;
+  -webkit-transition: linear .2s;
+  -o-transition: linear .2s;
+  transition: linear .2s;
 }
 
 .pagination a.active,
 .pagination span.active {
   font-size: 18px;
-  background: #61b291;
+  background-color: #61b291;
+  color: #fff;
+}
+
+.pagination a:hover {
+  background-color: #61b291;
   color: #fff;
 }
 
@@ -929,6 +943,30 @@ body.lock::after {
   margin: 0 25px 0 auto;
 }
 
+.header__basket span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 8px;
+  color: #fffff5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 17px;
+  min-width: 17px;
+  border-radius: 50%;
+  background-color: #61B291;
+}
+
 .header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -963,6 +1001,14 @@ body.lock::after {
 
 .header--main .header__languege {
   margin: 0 0 0 auto;
+}
+
+.header--main .social a {
+  background-color: transparent !important;
+}
+
+.header--main .social a:hover svg path {
+  fill: #61B291;
 }
 
 /*end header=========================*/
@@ -1037,6 +1083,7 @@ body.lock::after {
   position: relative;
   overflow: hidden;
   height: 45px;
+  padding: 0 50px;
 }
 
 .type-slider button {
@@ -1057,6 +1104,8 @@ body.lock::after {
   -webkit-transition: linear .2s;
   -o-transition: linear .2s;
   transition: linear .2s;
+  white-space: nowrap;
+  margin: 0 auto;
 }
 
 .type-slider button svg {
@@ -1068,9 +1117,6 @@ body.lock::after {
 }
 
 .type-slider .swiper-slide {
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,9 +1127,9 @@ body.lock::after {
   position: absolute;
   left: 0;
   height: 100%;
-  width: 60px;
+  width: 40px;
   bottom: 0;
-  background-color: #fff;
+  background-color: #FFFFF5;
   z-index: 2;
 }
 
@@ -1092,9 +1138,9 @@ body.lock::after {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 60px;
+  width: 40px;
   bottom: 0;
-  background-color: #fff;
+  background-color: #FFFFF5;
   z-index: 2;
 }
 
@@ -1267,7 +1313,7 @@ body.lock::after {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -9px;
-  padding: 4px 8px;
+  padding: 2px 8px;
   color: #fffff5;
   font-size: 12px;
   font-weight: 400;
@@ -1278,7 +1324,7 @@ body.lock::after {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 18px;
+  height: 18px !important;
 }
 
 .card h3 {
@@ -1292,6 +1338,7 @@ body.lock::after {
 }
 
 .card p {
+  padding: 0 15px;
   margin: 0 0 5px 0;
   color: #fffff5;
   font-family: "Marck Script", cursive;
@@ -1465,14 +1512,14 @@ body.lock::after {
   position: absolute;
   background-image: url("../images/dest/content/card-before.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  right: 10px;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
 }
 
 .main-box h3 {
@@ -1840,6 +1887,7 @@ body.lock::after {
     display: none;
   }
   .type-slider {
+    padding: 0;
     margin: 0px 0 40px;
     height: -webkit-fit-content;
     height: -moz-fit-content;

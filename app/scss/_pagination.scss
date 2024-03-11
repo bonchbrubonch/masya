@@ -31,11 +31,16 @@
     color: #61b291;
     font-size: 18px;
     border-radius: 50%;
+    transition: linear .2s;
     &.active {
       font-size: 18px;
-      background: #61b291;
+      background-color: #61b291;
       color: #fff;
     }
+  }
+  a:hover{
+    background-color: #61b291;
+    color: #fff;
   }
   span{
     border: none;

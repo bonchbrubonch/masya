@@ -24,9 +24,13 @@ $(function () {
 
 
 var swiper = new Swiper('.type-slider', {
-  slidesPerView: 5,
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 10,
+  autoplay: {
+    centeredSlides: true,
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -34,12 +38,21 @@ var swiper = new Swiper('.type-slider', {
   breakpoints: {
     320: {
       spaceBetween: 8,
-      autoplay: {
-        delay: 2000,
-      },
+      slidesPerView: 1,
+
+    },
+    375: {
+      slidesPerView: 2,
     },
     576: {
-      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+
+    900: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   }
 });
@@ -51,22 +64,22 @@ var mySwiper;
 
 // Функція для перевірки розширення вікна перегляду та ініціалізації Swiper
 function initSwiper() {
-    if (window.innerWidth <= 576 && !mySwiper) {
-        mySwiper = new Swiper('.mySwiper', {
-          slidesPerView: 1.1,
-          loop: true,
-          spaceBetween: 30,
-        });
-    } else if (window.innerWidth > 576 && mySwiper) {
-        mySwiper.destroy();
-        mySwiper = undefined;
-    }
+  if (window.innerWidth <= 576 && !mySwiper) {
+    mySwiper = new Swiper('.mySwiper', {
+      slidesPerView: 1.1,
+      loop: true,
+      spaceBetween: 30,
+    });
+  } else if (window.innerWidth > 576 && mySwiper) {
+    mySwiper.destroy();
+    mySwiper = undefined;
+  }
 }
 
 // Виклик функції при завантаженні сторінки
 initSwiper();
 
 // Виклик функції при зміні розміру вікна
-window.addEventListener('resize', function() {
-    initSwiper();
+window.addEventListener('resize', function () {
+  initSwiper();
 });
