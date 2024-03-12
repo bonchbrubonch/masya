@@ -209,3 +209,23 @@ body.lock {
   display: none;
 }
 /*end languege============*/
+
+/*start sticker=====*/
+.sticker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -9px;
+  padding: 2px 8px;
+  color: #fffff5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 80%;
+  border-radius: 50px;
+  background-color: rgb(236, 187, 181);
+  text-align: center;
+  width: fit-content;
+  height: 18px !important;
+}
+/*end sticker=====*/

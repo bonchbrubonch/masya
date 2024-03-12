@@ -48,7 +48,6 @@ var swiper = new Swiper('.type-slider', {
     320: {
       spaceBetween: 8,
       slidesPerView: 1,
-
     },
     375: {
       slidesPerView: 2,
@@ -66,7 +65,19 @@ var swiper = new Swiper('.type-slider', {
   }
 });
 
-
+var swiper = new Swiper('.shop-intro__slider', {
+  loop: true,
+  slidesPerView: 1,
+  effect: "fade",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // Ініціалізація Swiper
 var mySwiper;
