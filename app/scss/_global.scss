@@ -1,4 +1,4 @@
-html {
+html *{
   box-sizing: border-box;
 }
 
@@ -140,14 +140,17 @@ body.lock {
     background-color: #F7F7F8;
     border-radius: 50%;
     transition: linear .2s;
-    &:hover{
+
+    &:hover {
       background-color: #75C6A5;
     }
   }
-  svg path{
+
+  svg path {
     transition: linear .2s;
   }
 }
+
 /*end social===========*/
 
 
@@ -179,9 +182,11 @@ body.lock {
       li {
         padding: 5px 0;
       }
-      a{
+
+      a {
         transition: linear .2s;
-        &:hover{
+
+        &:hover {
           color: #75C6A5 !important;
         }
       }
@@ -208,6 +213,7 @@ body.lock {
   position: absolute;
   display: none;
 }
+
 /*end languege============*/
 
 /*start sticker=====*/
@@ -228,4 +234,43 @@ body.lock {
   width: fit-content;
   height: 18px !important;
 }
+
 /*end sticker=====*/
+
+/*start ink-back=============*/
+.link-back {
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  color: #3e3e3e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  transition: linear .2s;
+  width: fit-content;
+  span{
+    margin: 0 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #75c6a5;
+    transition: linear .2s;
+  }
+  svg path{
+    transition: linear .2s;
+  }
+  &:hover{
+    span{
+      background-color: #75c6a5;
+    }
+    svg path{
+      stroke: #fff;
+    }
+  }
+}
+
+
+/*end ink-back=============*/

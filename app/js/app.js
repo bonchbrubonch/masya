@@ -20,6 +20,31 @@ $(function () {
     minimumResultsForSearch: -1,
   });
 
+  $('.productt__inner-tab').each(function() {
+    let ths = $(this);
+    ths.find('.productt__item').not(':first').hide();
+    ths.find('.productt__btn').click(function() {
+      ths.find('.productt__btn').removeClass('active').eq($(this).index()).addClass('active');
+      ths.find('.productt__item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+  });
+
+  $(".rateYo").rateYo({
+    starWidth: "25px",
+    ratedFill: "#FFEFA7",
+    spacing: "5px",
+    rating: 5,
+    readOnly: true
+  });
+
+  $(".rateYo-choice").rateYo({
+    starWidth: "40px",
+    ratedFill: "#FFEFA7",
+    spacing: "15px",
+    rating: 0,
+    fullStar: true
+  });
+
 });
 
 
@@ -102,4 +127,49 @@ initSwiper();
 // Виклик функції при зміні розміру вікна
 window.addEventListener('resize', function () {
   initSwiper();
+});
+
+var swiper = new Swiper('.productt__slider', {
+  loop: true,
+  slidesPerView: 1.1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  }
+});
+
+var swiper = new Swiper('.recomendation__slider', {
+  loop: true,
+  slidesPerView: 1.1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3.2,
+      spaceBetween: 20,
+    },
+  }
+});
+var swiper = new Swiper('.review__slider', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
