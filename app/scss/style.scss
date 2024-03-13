@@ -1363,7 +1363,20 @@
       line-height: 120%;
     }
   }
-
+  &__allergens{
+    display: flex;
+    margin: 0 0 0 -15px;
+    li{
+      margin: 0 0 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #D4F0C0;
+      border-radius: 50%;
+    }
+  }
   &__weight {
     margin: 0 0 25px 0;
     display: flex;
