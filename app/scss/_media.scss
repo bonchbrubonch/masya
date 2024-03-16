@@ -539,6 +539,99 @@
   .basket-full {
     padding: 30px 0 20px;
   }
+
+  .form--center {
+    text-align: center;
+  }
+
+  .form__box-wrap {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .form__box-wrap .form__input-wrap {
+    width: 100%;
+    margin: 20px 0 0 0;
+
+    input {
+      max-width: 100%;
+    }
+  }
+
+  .form__day,
+  .form__clock {
+    padding: 0 20px;
+  }
+
+  .form h3+p {
+    font-size: 18px;
+  }
+
+  .form__day span,
+  .form__clock span {
+    width: 100%;
+    text-align: left;
+  }
+
+  .form__show {
+    margin: 20px auto 0 0;
+    width: fit-content;
+    display: flex;
+  }
+
+  .form--center {
+    .form__input-wrap {
+      margin: 20px 0 25px 0;
+    }
+  }
+
+  .form__input-wrap--adress {
+    input {
+      padding: 20px 15px 100px 45px !important;
+      height: 125px;
+      font-size: 18px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .form__input-wrap--adress a.btn {
+    left: 15px;
+    right: 15px;
+    top: auto;
+    transform: translateY(0);
+    bottom: 15px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .form__input-wrap--adress::after {
+    top: 20px;
+  }
+
+  .form__input-wrap--adress {
+    margin: 0 0 30px 0;
+  }
+
+  .fake {
+    width: 25px;
+    height: 25px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .form__radio {
+    margin: 0 0 25px 0;
+  }
+  .form__politic{
+    text-align: center !important;
+  }
+
+
 }
 
 @media (max-width: 576px) {
@@ -798,15 +891,47 @@
   .form__item-pay strong {
     font-size: 18px;
   }
-  .form__item-pay{
+
+  .form__item-pay {
     margin: 15px 0 10px;
     padding: 10px;
   }
+
   .form__sum-pay {
     font-size: 18px;
   }
-  .form__item-pay + .btn{
+
+  .form__item-pay+.btn {
     max-width: 100%;
     width: 100%;
   }
+  .done-cash__inner{
+    padding: 15px 25px;
+  }
+
+  .done-cash__user{
+    font-size: 32px;
+    margin: 0 0 15px 0;
+  }
+  .done-cash p{
+    font-size: 16px;
+    margin: 0 0 30px 0;
+  }
+  .done-cash p a{
+    display: block;
+    font-size: 16px;
+  }
+  .done-cash__info{
+    flex-wrap: wrap;
+  }
+  .done-cash__num{
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .done-cash__date,
+  .done-cash__info,
+  .done-cash__clock{
+    font-size: 18px;
+  }
+  
 }
