@@ -1107,6 +1107,25 @@ body.lock::after {
   fill: #61B291;
 }
 
+.header.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  z-index: 999;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header.sticky .header__inner {
+  margin: 10px 0 0 0;
+}
+
+.margin-top {
+  margin: 200px 0 0 0;
+}
+
 /*end header=========================*/
 .menu.active {
   -webkit-transform: translateX(0);
@@ -5313,5 +5332,20 @@ body.lock::after {
   .modal strong {
     font-size: 18px;
     margin: 0 0 25px 0;
+  }
+  .sticky .header__inner {
+    height: 80px !important;
+  }
+  .sticky .header__search {
+    display: none !important;
+  }
+  .sticky .menu {
+    top: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__mark {
+    display: none !important;
   }
 }

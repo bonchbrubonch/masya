@@ -203,3 +203,18 @@ var swiper = new Swiper('.review__slider', {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//header
+const navOffset = $(".header").offset().top + 200;
+$(window).scroll(function () {
+
+  const scrolled = $(this).scrollTop();
+
+  if (scrolled > navOffset) {
+    $('header').addClass("sticky animate__animated animate__fadeInDown");
+    $('header').next().addClass("margin-top");
+  } else if (scrolled < navOffset) {
+    $('header').removeClass("sticky animate__animated animate__fadeInDown");
+    $('header').next().removeClass("margin-top");
+  }
+});

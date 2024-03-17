@@ -1040,8 +1040,29 @@
   .done-cash__link {
     margin: 15px 0 0 0;
   }
-  .modal strong{
+
+  .modal strong {
     font-size: 18px;
     margin: 0 0 25px 0;
+  }
+
+  .sticky {
+    .header__inner {
+      height: 80px !important;
+    }
+
+    .header__search {
+      display: none !important;
+    }
+
+    .menu {
+      top: 90px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header__mark {
+    display: none !important;
   }
 }
