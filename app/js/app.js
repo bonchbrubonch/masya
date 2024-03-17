@@ -6,6 +6,10 @@ $(function () {
     $("body").toggleClass("lock");
   });
 
+  $(".form__watch").on("click", function () {
+    $(this).toggleClass("show");
+  });
+
   $(".type-slider .swiper-slide button").on("click", function () {
     $(".type-slider .swiper-slide button").removeClass("active");
     $(this).toggleClass("active");
@@ -28,6 +32,17 @@ $(function () {
       ths.find('.productt__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
+
+  $('.modal__tab-wrap').each(function() {
+    let ths = $(this);
+    ths.find('.modal__item').not(':first').hide();
+    ths.find('.modal__btn').click(function() {
+      ths.find('.modal__btn').removeClass('active').eq($(this).index()).addClass('active');
+      ths.find('.modal__item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+  });
+
+
 
   $(".rateYo").rateYo({
     starWidth: "25px",

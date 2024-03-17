@@ -36,7 +36,12 @@ button {
   background-color: transparent;
   // outline: none;
 }
-
+input{
+  outline-color: #61b291;
+}
+textarea{
+  outline-color: #61b291;
+}
 body {
   min-width: 320px;
   overflow-x: hidden;

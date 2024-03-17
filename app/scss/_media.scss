@@ -197,6 +197,15 @@
     align-items: flex-start;
   }
 
+  .checkout__inner {
+    flex-direction: column;
+  }
+
+  .checkout__left,
+  .checkout__right {
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
 
 }
 
@@ -627,7 +636,8 @@
   .form__radio {
     margin: 0 0 25px 0;
   }
-  .form__politic{
+
+  .form__politic {
     text-align: center !important;
   }
 
@@ -905,33 +915,133 @@
     max-width: 100%;
     width: 100%;
   }
-  .done-cash__inner{
+
+  .done-cash__inner {
     padding: 15px 25px;
   }
 
-  .done-cash__user{
+  .done-cash__user {
     font-size: 32px;
     margin: 0 0 15px 0;
   }
-  .done-cash p{
+
+  .done-cash p {
     font-size: 16px;
     margin: 0 0 30px 0;
   }
-  .done-cash p a{
+
+  .done-cash p a {
     display: block;
     font-size: 16px;
   }
-  .done-cash__info{
+
+  .done-cash__info {
     flex-wrap: wrap;
   }
-  .done-cash__num{
+
+  .done-cash__num {
     margin: 0 0 20px 0;
     width: 100%;
   }
+
   .done-cash__date,
   .done-cash__info,
-  .done-cash__clock{
+  .done-cash__clock {
     font-size: 18px;
   }
-  
+
+  .modal {
+    padding: 60px 25px;
+  }
+
+  .modal__buttons {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .modal__btn {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+
+  .modal__btn+.modal__btn {
+    margin: 20px 0 0 0;
+  }
+
+  .fancybox-slide--html .fancybox-close-small {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal p {
+    font-size: 18px;
+  }
+
+  .checkout-img {
+    width: 95px;
+  }
+
+  .checkout p {
+    margin: 0 0 25px 0;
+    font-size: 18px;
+  }
+
+  .checkout {
+    .basket-full__item {
+      padding: 10px;
+    }
+
+    .basket-full__img {
+      margin: 0 15px 0 0;
+      width: 65px;
+      height: 65px;
+    }
+
+    .basket-full__item h6 {
+      max-width: 195px;
+    }
+  }
+
+  .checkout .basket-full__item .cardd__calc-wrap {
+    margin: 0;
+  }
+
+  .checkout .basket-full__item-col {
+    width: 100%;
+  }
+
+  .checkout__bottom-item,
+  .checkout__right-item {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .checkout__right-box {
+    margin: 0 0 35px 0;
+  }
+
+  .done-cash svg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 10px 0;
+  }
+
+  .done-cash p {
+    margin: 0 0 15px 0;
+  }
+
+  .done-cash__num {
+    font-size: 16px;
+  }
+
+  .done-cash__link {
+    margin: 15px 0 0 0;
+  }
+  .modal strong{
+    font-size: 18px;
+    margin: 0 0 25px 0;
+  }
 }
