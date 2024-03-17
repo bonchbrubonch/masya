@@ -1122,8 +1122,12 @@ body.lock::after {
   margin: 10px 0 0 0;
 }
 
+.header.sticky .menu {
+  top: 115px;
+}
+
 .margin-top {
-  margin: 200px 0 0 0;
+  margin: 180px 0 0 0;
 }
 
 /*end header=========================*/
@@ -5340,7 +5344,10 @@ body.lock::after {
     display: none !important;
   }
   .sticky .menu {
-    top: 90px;
+    top: 90px !important;
+  }
+  .margin-top {
+    margin: 180px 0 0 0;
   }
 }
 
