@@ -60,6 +60,30 @@ $(function () {
     fullStar: true
   });
 
+  $(".category-list__child-item").on("click", function () {
+    $(this).toggleClass("open");
+  });
+
+  $(".category-list__chek").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
+  $(".category-list__title").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
+  $(".menu-page__right-menu").on("click", function () {
+    $(".menu-page__left").addClass("open");
+    $("body").addClass("lock");
+  });
+
+  $(".menu-page__left-close").on("click", function () {
+    $(".menu-page__left").removeClass("open");
+    $("body").removeClass("lock");
+  });
+
+
+
 });
 
 
