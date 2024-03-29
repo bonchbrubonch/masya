@@ -143,6 +143,20 @@ var swiper = new Swiper('.shop-intro__slider', {
   },
 });
 
+var swiper = new Swiper('.shop-intro__slider', {
+  loop: true,
+  slidesPerView: 1,
+  effect: "fade",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // Ініціалізація Swiper
 var mySwiper;
 
@@ -218,6 +232,23 @@ var swiper = new Swiper('.recomendation__slider', {
     },
   }
 });
+
+var swiper = new Swiper('.blog-info__swiper', {
+  loop: true,
+  slidesPerView: 1.1,
+  spaceBetween: 30,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3.2,
+      spaceBetween: 20,
+    },
+  }
+});
+
 var swiper = new Swiper('.review__slider', {
   loop: true,
   slidesPerView: 1,
