@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <div class="checkout-img">
+    <img src="images/dest/content/logo.png" alt="logo">
+  </div>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list">
+          <li><a href="#">Корзина</a></li>
+          <li><a href="#">Оформление заказа</a></li>
+          <li><span>Оплата</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="checkout">
+    <div class="container">
+      <div class="checkout__inner">
+        <div class="checkout__left">
+          <p>Ваш заказ</p>
+          <div class="basket-full__item">
+            <div class="basket-full__item-col">
+              <div class="basket-full__img">
+                <img src="images/dest/content/review1.jpg" alt="img">
+              </div>
+              <div class="basket-full__item-col-inner">
+                <h6>
+                  Домашние вареники с вишней
+                </h6>
+              </div>
+            </div>
+            <div class="basket-full__item-col">
+              <div class="cardd__calc-wrap">
+                <button class="cardd__minus">
+                  <span></span>
+                </button>
+                <span>
+                  <span class="cardd__weight-sum">1</span>
+                  кг
+                </span>
+                <button class="cardd__plus">
+                  <span></span>
+                </button>
+              </div>
+              <div class="basket-full__cost-two">
+                200 czk
+              </div>
+            </div>
+          </div>
+          <div class="basket-full__item">
+            <div class="basket-full__item-col">
+              <div class="basket-full__img">
+                <img src="images/dest/content/review1.jpg" alt="img">
+              </div>
+              <div class="basket-full__item-col-inner">
+                <h6>
+                  Домашние вареники с вишней
+                </h6>
+              </div>
+            </div>
+            <div class="basket-full__item-col">
+              <div class="cardd__calc-wrap">
+                <button class="cardd__minus">
+                  <span></span>
+                </button>
+                <span>
+                  <span class="cardd__weight-sum">1</span>
+                  кг
+                </span>
+                <button class="cardd__plus">
+                  <span></span>
+                </button>
+              </div>
+              <div class="basket-full__cost-two">
+                200 czk
+              </div>
+            </div>
+          </div>
+          <div class="basket-full__item">
+            <div class="basket-full__item-col">
+              <div class="basket-full__img">
+                <img src="images/dest/content/review1.jpg" alt="img">
+              </div>
+              <div class="basket-full__item-col-inner">
+                <h6>
+                  Домашние вареники с вишней
+                </h6>
+              </div>
+            </div>
+            <div class="basket-full__item-col">
+              <div class="cardd__calc-wrap">
+                <button class="cardd__minus">
+                  <span></span>
+                </button>
+                <span>
+                  <span class="cardd__weight-sum">1</span>
+                  кг
+                </span>
+                <button class="cardd__plus">
+                  <span></span>
+                </button>
+              </div>
+              <div class="basket-full__cost-two">
+                200 czk
+              </div>
+            </div>
+          </div>
+          <div class="checkout__left-bottom">
+            <div class="checkout__bottom-item">
+              <span>Сумма</span>
+              <div class="checkout__sum"><span>200</span> czk</div>
+            </div>
+            <div class="checkout__bottom-item">
+              <span>Доставка</span>
+              <div class="checkout__delivery"><span>50</span> czk</div>
+            </div>
+            <div class="checkout__bottom-item">
+              <span>Общая сумма</span>
+              <div class="checkout__sum-global"><span>250</span> czk</div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__right">
+          <p>
+            Данные о доставке
+          </p>
+          <div class="checkout__right-box">
+            <div class="checkout__right-item">
+              <span>Номер телефона</span>
+              <span></span>
+            </div>
+            <div class="checkout__right-item">
+              <span>Адрес</span>
+              <span></span>
+            </div>
+            <div class="checkout__right-item">
+              <span>Время</span>
+              <span></span>
+            </div>
+          </div>
+          <form class="form">
+            <div class="form__input-wrap">
+              <span class="form__sup">Номер карты</span>
+              <input type="text" placeholder="Номер" required>
+            </div>
+            <div class="form__box-input">
+              <div class="form__input-wrap">
+                <span class="form__sup">Срок дествия</span>
+                <input type="text" placeholder="ММ/ГГ" required>
+              </div>
+              <div class="form__input-wrap cvv">
+                <span class="form__sup">CVV</span>
+                <input type="password"  required>
+                <div class="form__watch">
+                  <img class="form__watch-one" src="images/dest/icons/watch-one.svg" alt="icon">
+                  <img class="form__watch-two" src="images/dest/icons/watch-two.svg" alt="icon">
+                </div>
+              </div>
+            </div>
+            <button class="btn">
+              Оплатить 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
