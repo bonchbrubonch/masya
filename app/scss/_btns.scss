@@ -11,7 +11,25 @@
   font-weight: 500;
   line-height: 120%;
   transition: linear .2s;
+  border: 1px solid transparent;
+  width: fit-content;
+  text-align: center;
   &:hover{
     background-color: #5ec29a;
+  }
+  &--transparent{
+    border-color: #61b291;
+    color: #3e3e3e;
+    background-color: transparent;
+    &:hover{
+      color: #fffff5;
+    }
+  }
+  &--yellow{
+    color: #3e3e3e;
+    background-color: #FFEFA7;
+    &:hover{
+      color: #fffff5;
+    }
   }
 }

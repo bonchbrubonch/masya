@@ -82,7 +82,10 @@ $(function () {
     $("body").removeClass("lock");
   });
 
-
+  $(".gallery__show").on("click", function () {
+    $(this).toggleClass("active");
+    $(".gallery__box").toggleClass("open");
+  });
 
 });
 
@@ -129,18 +132,38 @@ var swiper = new Swiper('.type-slider', {
   }
 });
 
-var swiper = new Swiper('.shop-intro__slider', {
+var swiper = new Swiper('.restaurant-intro__slider', {
   loop: true,
   slidesPerView: 1,
   effect: "fade",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+var swiper = new Swiper('.catering-intro__slider', {
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2.8,
+    },
+  }
 });
 
 var swiper = new Swiper('.shop-intro__slider', {
@@ -233,6 +256,26 @@ var swiper = new Swiper('.recomendation__slider', {
   }
 });
 
+var swiper = new Swiper('.restaurant-about__slider', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  }
+});
+
 var swiper = new Swiper('.blog-info__swiper', {
   loop: true,
   slidesPerView: 1.1,
@@ -244,6 +287,36 @@ var swiper = new Swiper('.blog-info__swiper', {
     },
     992: {
       slidesPerView: 3.2,
+      spaceBetween: 20,
+    },
+  }
+});
+var swiper = new Swiper('.catering-slider__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3.2,
+      spaceBetween: 20,
+    },
+  }
+});
+var swiper = new Swiper('.team__swiper', {
+  loop: true,
+  slidesPerView: 1.2,
+  spaceBetween: 30,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 4,
       spaceBetween: 20,
     },
   }
