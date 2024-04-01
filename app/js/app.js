@@ -42,6 +42,15 @@ $(function () {
     }).eq(0).addClass('active');
   });
 
+  $('.method-pay__inner-tab').each(function() {
+    let ths = $(this);
+    ths.find('.method-pay__item').not(':first').hide();
+    ths.find('.method-pay__btn').click(function() {
+      ths.find('.method-pay__btn').removeClass('active').eq($(this).index()).addClass('active');
+      ths.find('.method-pay__item').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('active');
+  });
+
 
 
   $(".rateYo").rateYo({

@@ -907,6 +907,10 @@
   &--restaurant {
     padding: 80px 0 80px;
   }
+
+  &--about {
+    padding: 125px 0 80px;
+  }
 }
 
 /*end preference========================*/
@@ -3923,7 +3927,8 @@
     line-height: 120%;
     text-align: center;
   }
-  &--about{
+
+  &--about {
     padding: 30px 0 100px;
   }
 }
@@ -4505,6 +4510,7 @@
 .team {
   padding: 0 0 170px 0;
   overflow: hidden;
+
   h3 {
     margin: 0 0 60px 0;
     color: rgb(62, 62, 62);
@@ -4584,7 +4590,335 @@
 
 /*end about=============*/
 
+/*about-us-info==========*/
+.about-us-info {
+  padding: 0 0 50px 0;
+  max-width: 815px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(62, 62, 62);
 
+  h3 {
+    margin: 0 0 25px 0;
+    font-family: "Marck Script", cursive;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+
+    .btn {
+      margin: 0 15px 0 0;
+    }
+
+    .btn svg {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &--sm {
+    h3 {
+      font-size: 40px;
+    }
+
+    padding: 120px 0 95px;
+  }
+}
+
+/*end-us-info==========*/
+
+/*start about-us-content======*/
+.about-us-content {
+  color: rgb(62, 62, 62);
+
+  h3 {
+    margin: 0 0 30px 0;
+    font-family: "Marck Script", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  p {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .blog__md-img {
+    margin: 0 0 50px -30px;
+  }
+}
+
+/*end about-us-content======*/
+
+/*start delivery page==================*/
+.method {
+  padding: 0 0 30px 0;
+  color: rgb(62, 62, 62);
+
+  h3 {
+    margin: 0 0 50px 0;
+    font-family: "Marck Script", cursive;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__item {
+    height: fit-content;
+    margin: 0 30px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    max-width: 375px;
+    width: 100%;
+    background-color: #F7F7F8;
+
+    span {
+      margin: 0 0 50px 0;
+      padding: 12px 15px;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(255, 255, 245);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 120%;
+      height: 55px;
+      border-radius: 30px;
+      background-color: rgb(236, 187, 181);
+    }
+  }
+
+  &__content {
+    border-radius: 200px;
+    padding: 80px 75px;
+    background-image: url('../images/dest/content/methodbg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  &__item-box {
+    margin: 0 0 30px 0;
+  }
+
+  &__item-box:last-child {
+    margin: 0;
+
+  }
+
+  &__question {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  p {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  a {
+    color: rgb(97, 178, 145);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  h6 {
+    color: rgb(97, 178, 145);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__img {
+    margin: -55px 0 0 3%;
+    max-width: 315px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.delibvery-box {
+  padding: 45px 0 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 30px -30px;
+  }
+
+  &__item {
+    color: rgb(62, 62, 62);
+    width: calc(50% - 30px);
+    margin: 0 0 0 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 248);
+
+    h6 {
+      margin: 0 0 50px 0;
+      font-family: "Marck Script", cursive;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    span {
+      display: flex;
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+
+    li {
+      position: relative;
+      padding: 0 0 0 35px;
+      margin: 0 0 15px 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 130%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/dest/icons/step.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+
+
+    }
+  }
+
+  &__item-box {
+    margin: 0 0 30px 0;
+  }
+}
+
+.method-pay {
+  padding: 40px 0 80px;
+  h3 {
+    margin: 0 0 50px 0;
+    color: rgb(62, 62, 62);
+    font-family: "Marck Script", cursive;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  &__inner-tab {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 100%;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    height: 55px;
+    color: rgb(62, 62, 62);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  &__btn.active {
+    background-color: rgb(247, 247, 248);
+  }
+
+  &__item {
+    padding: 25px;
+    width: 100%;
+    background-color: rgb(247, 247, 248);
+    color: rgb(62, 62, 62);
+
+    span {
+      display: flex;
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+
+  &__item-box {
+    margin: 0 0 30px 0;
+  }
+
+  &__item-box:last-child {
+    margin: 0;
+  }
+}
+
+
+/*end delivery page==================*/
 
 
 

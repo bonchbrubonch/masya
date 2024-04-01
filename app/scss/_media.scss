@@ -153,6 +153,10 @@
   .catering-intro__slider .swiper-wrapper {
     margin: 0;
   }
+
+  .method__img {
+    max-width: 110px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -392,6 +396,21 @@
   .catering-events__item {
     width: calc(50% - 30px);
   }
+
+  .method__inner {
+    flex-wrap: wrap;
+  }
+
+  .method__item {
+
+    max-width: calc(50% - 30px);
+  }
+
+  .method__content {
+    padding: 80px 50px;
+  }
+
+
 
 }
 
@@ -1390,6 +1409,138 @@
 
   .team {
     padding: 0 0 110px 0;
+  }
+
+  .about-us-info h3 {
+    font-size: 48px;
+    margin: 0 0 15px 0;
+  }
+
+  .about-us-info p,
+  .about-us-content p {
+    font-size: 16px;
+  }
+
+  .about-us-info {
+    padding: 0 0 30px 0;
+  }
+
+  .preference {
+    padding: 55px 0 15px;
+  }
+
+  .about-us-content h3,
+  .about-us-info h3 {
+    font-size: 32px;
+  }
+
+  .about-us-info--sm {
+    padding: 50px 0 60px;
+  }
+
+  .method__inner {
+    flex-direction: column;
+  }
+
+  .method__item {
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
+
+  .delibvery-box__item {
+    width: calc(100% - 30px);
+  }
+
+  .method-pay__inner-tab {
+    flex-direction: column;
+  }
+
+  .method h3 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 35px 0;
+  }
+
+  .method__item {
+    padding: 15px;
+  }
+
+  .method__content {
+    padding: 70px 60px;
+  }
+
+  .method__item span {
+    font-size: 18px;
+    margin: 0 auto 30px;
+  }
+
+  .method__item-box {
+    margin: 0 0 25px 0;
+  }
+
+  .method__img {
+    max-width: 310px;
+    margin: -95px auto 0;
+  }
+
+  .delibvery-box__item h6 {
+    font-size: 32px;
+    margin: 0 0 30px 0;
+  }
+
+  .delibvery-box__item {
+    margin: 0 0 30px 30px;
+    padding: 25px;
+  }
+
+  .delibvery-box__item p {
+    font-size: 16px;
+  }
+
+  .delibvery-box__item-box {
+    margin: 0 0 25px 0;
+  }
+
+  .delibvery-box__item li {
+    padding: 0 0 0 30px;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+
+  .method-pay h3 {
+    margin: 0 0 25px 0;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .delibvery-box__inner {
+    margin: 0 0 0 -30px;
+  }
+
+  .delibvery-box {
+    padding: 45px 0 20px;
+  }
+
+  .method-pay {
+    padding: 25px 0 45px;
+  }
+
+  .method-pay__btn {
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .method-pay__buttons {
+    margin: 0 0 25px 0;
+  }
+
+  .method-pay__item span {
+    margin: 0px 0 10px 0;
+  }
+
+  .method-pay__item p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
   }
 
 }
