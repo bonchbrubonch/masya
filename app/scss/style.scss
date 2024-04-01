@@ -4844,6 +4844,7 @@
 
 .method-pay {
   padding: 40px 0 80px;
+
   h3 {
     margin: 0 0 50px 0;
     color: rgb(62, 62, 62);
@@ -4917,10 +4918,151 @@
   }
 }
 
-
 /*end delivery page==================*/
 
+/*start contacts===========*/
+.contacts {
+  &__top {
+    padding: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    color: rgb(62, 62, 62);
 
+    h1 {
+      margin: 0 0 15px 0;
+      font-family: "Marck Script", cursive;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    p {
+      margin: 0 0 25px 0;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+
+  &__top-link {
+    width: fit-content;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(97, 178, 145);
+    border-radius: 12px;
+    height: 45px;
+
+    svg {
+      margin: 0 10px 0 0;
+    }
+
+  }
+
+  &__top-left {
+    max-width: 585px;
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+
+  &__top-right {
+    position: relative;
+    padding: 0 170px 0 0;
+  }
+
+  &__top-img {
+    width: 420px;
+    height: 440px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__top-cloud {
+    padding: 65px 40px 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 245px;
+    height: 245px;
+    background-image: url("../images/dest/icons/citation.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 35px 0 40px;
+  }
+
+  &__inner {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin: 0 20px 0 0;
+    max-width: 445px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__right {
+    max-width: 400px;
+    width: 100%;
+    color: rgb(62, 62, 62);
+
+    h3 {
+      margin: 0 0 25px 0;
+      font-family: "Marck Script", cursive;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 50px 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 120%;
+      text-align: center;
+    }
+
+    .form {
+      .form__box {
+        padding: 0;
+      }
+
+      .btn {
+        max-width: fit-content;
+      }
+    }
+  }
+
+
+
+
+
+
+}
+
+/*end contacts===========*/
 
 
 
@@ -4956,6 +5098,30 @@
 
       &:hover {
         text-decoration-color: #3e3e3e;
+      }
+    }
+
+    &--new {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 0 15px 0;
+      .delivery__mid {
+        margin: 0 0 0 20px;
+        max-width: 300px;
+
+        p {
+          margin: 0 0 10px 0;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 120%;
+        }
+
+        span {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 120%;
+        }
       }
     }
   }
