@@ -249,6 +249,7 @@
   .footer__mid a:nth-child(2) {
     margin: 15px 0 0 0;
   }
+
   .footer__mid a:nth-child(3) {
     margin: 15px 0 0 0;
   }
@@ -422,7 +423,46 @@
     padding: 80px 50px;
   }
 
+  .cabinet__one-wrap {
+    margin: 50px 0 0 0;
+  }
 
+  .cabinet__one-box {
+    margin: 0 0 25px 0;
+    width: 100%;
+  }
+
+  .cabinet__content--four {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cabinet__content-left {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .cabinet__content-map {
+    height: 475px;
+    width: 100%;
+  }
+
+  .cabinet__left-adress {
+    margin: 0 0 30px 0;
+  }
+
+  .cabinet__left-gps {
+    font-size: 16px;
+
+    p+span {
+      font-size: 14px;
+    }
+  }
+
+  .cabinet__left-gps {
+    margin: 0 0 50px 0;
+  }
 
 }
 
@@ -1597,6 +1637,94 @@
       margin: 0 0 15px 0;
     }
   }
+
+  .policy h3 {
+    margin: 25px 0 15px 0;
+    font-size: 18px;
+  }
+
+  .policy p {
+    font-size: 16px;
+  }
+
+  .cabinet__right-links {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFF5;
+    z-index: 99;
+    width: 100%;
+    transition: linear .5s;
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    opacity: .5;
+    transform: translate(-100%);
+  }
+
+  .cabinet__right-links.open {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  .cabinet__right-link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .cabinet__right-link span {
+    margin: 0 0 0 15px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .cabinet__content {
+    padding: 30px;
+  }
+
+  .cabinet .container {
+    padding: 0;
+  }
+
+  .cabinet__addLogo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cabinet__one-link {
+    margin: 0 0 25px 0;
+    font-size: 18px;
+  }
+
+  .cabinet__item-one {}
+
+  .cabinet__item-one p {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+  }
+
+  .cabinet__item-empty img {
+    width: 150px;
+    height: 160px;
+  }
+
+  .cabinet__item-empty p {
+    font-size: 18px;
+  }
+
+
+
+
+
 
 
 }

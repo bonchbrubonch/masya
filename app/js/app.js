@@ -24,6 +24,14 @@ $(function () {
     minimumResultsForSearch: -1,
   });
 
+  $(".sex").select2({
+    placeholder: "Не выбрано",
+    minimumResultsForSearch: -1,
+  });
+
+
+
+
   $('.productt__inner-tab').each(function() {
     let ths = $(this);
     ths.find('.productt__item').not(':first').hide();
