@@ -1347,12 +1347,16 @@
   }
 
   .gallery__box {
+    margin: 0 0 0 -30px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
+    grid-gap: 0;
   }
 
   .gallery__item {
+    margin: 0 0 30px 30px;
+    width: calc(50% - 30px);
     height: 310px;
     border-radius: 30px !important;
   }
@@ -2300,7 +2304,9 @@
   .products blockquote {
     display: none;
   }
-
+  .gallery__item{
+    width: calc(100% - 30px);
+  }
 }
 
 @media (max-width: 375px) {

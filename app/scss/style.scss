@@ -1518,8 +1518,9 @@
   }
 
   &__item {
+    margin: 0 0 30px 0;
     p {
-      margin: 0 0 30px 0;
+      margin: 0;
       color: #3e3e3e;
       font-size: 16px;
       font-weight: 300;
@@ -2580,13 +2581,15 @@
     border-radius: 15px;
     box-shadow: 0px 4px 8px 0px rgba(108, 108, 79, 0.1);
     background-color: rgb(255, 255, 245);
-
+    display: none;
     .form__day,
     .form__clock {
       padding: 0;
     }
   }
-
+  &__item.active{
+    display: block;
+  }
   &__item-btns {
     svg{
       width: 24px !important;
@@ -2602,7 +2605,7 @@
       height: 45px;
       border-radius: 30px;
       border-color: rgb(62, 62, 62);
-      pointer-events: none;
+      // pointer-events: none;
 
       svg {
         margin: 0 10px 0 0;
@@ -2610,8 +2613,9 @@
     }
 
     .btn.active {
-      color: #61b291;
-      border-color: #61b291;
+      color: #61b291 !important;
+      border-color: #61b291 !important;
+      background-color: #FFFFF5 !important;
 
       svg path {
         fill: #61b291;

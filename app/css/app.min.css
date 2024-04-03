@@ -2893,8 +2893,12 @@ body.lock::after {
   background-color: #D4F0C0;
 }
 
-.productt__item p {
+.productt__item {
   margin: 0 0 30px 0;
+}
+
+.productt__item p {
+  margin: 0;
   color: #3e3e3e;
   font-size: 16px;
   font-weight: 300;
@@ -4191,11 +4195,16 @@ body.lock::after {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(108, 108, 79, 0.1);
           box-shadow: 0px 4px 8px 0px rgba(108, 108, 79, 0.1);
   background-color: #fffff5;
+  display: none;
 }
 
 .bascet-box__item .form__day,
 .bascet-box__item .form__clock {
   padding: 0;
+}
+
+.bascet-box__item.active {
+  display: block;
 }
 
 .bascet-box__item-btns {
@@ -4221,7 +4230,6 @@ body.lock::after {
   height: 45px;
   border-radius: 30px;
   border-color: #3e3e3e;
-  pointer-events: none;
 }
 
 .bascet-box__item-btns .btn svg {
@@ -4229,8 +4237,9 @@ body.lock::after {
 }
 
 .bascet-box__item-btns .btn.active {
-  color: #61b291;
-  border-color: #61b291;
+  color: #61b291 !important;
+  border-color: #61b291 !important;
+  background-color: #FFFFF5 !important;
 }
 
 .bascet-box__item-btns .btn.active svg path {
@@ -9569,16 +9578,18 @@ body.lock::after {
     max-width: auto;
   }
   .gallery__box {
+    margin: 0 0 0 -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: auto;
+    grid-gap: 0;
   }
   .gallery__item {
+    margin: 0 0 30px 30px;
+    width: calc(50% - 30px);
     height: 310px;
     border-radius: 30px !important;
   }
@@ -10380,6 +10391,9 @@ body.lock::after {
   }
   .products blockquote {
     display: none;
+  }
+  .gallery__item {
+    width: calc(100% - 30px);
   }
 }
 

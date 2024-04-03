@@ -15,6 +15,11 @@ $(function () {
     $(this).toggleClass("active");
   });
 
+  $(".bascet-box-btn").on("click", function () {
+    $(this).addClass("active");
+    $(".bascet-box__item").addClass("active");
+  });
+
   $(".info .btn").on("click", function () {
     $(this).prev().addClass("open");
   });
