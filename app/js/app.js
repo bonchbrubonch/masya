@@ -29,6 +29,17 @@ $(function () {
     minimumResultsForSearch: -1,
   });
 
+  $(".day").select2({
+    minimumResultsForSearch: -1,
+  });
+  $(".time").select2({
+    minimumResultsForSearch: -1,
+  });
+  $(".people").select2({
+    minimumResultsForSearch: -1,
+  });
+
+
 
 
 

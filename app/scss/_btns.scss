@@ -14,6 +14,9 @@
   border: 1px solid transparent;
   width: fit-content;
   text-align: center;
+  svg path{
+    transition: linear .2s;
+  }
   &:hover{
     background-color: #5ec29a;
   }
@@ -23,6 +26,9 @@
     background-color: transparent;
     &:hover{
       color: #fffff5;
+      svg path{
+        fill: #fffff5;
+      }
     }
   }
   &--yellow{
@@ -30,6 +36,9 @@
     background-color: #FFEFA7;
     &:hover{
       color: #fffff5;
+      svg path{
+        fill: #fffff5;
+      }
     }
   }
 }

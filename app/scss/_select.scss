@@ -28,4 +28,18 @@
 .select2-container--default .select2-results__option--selected {
   background-color: #f7f7f8;
 }
+.select2-results__options{
+  
+  position: relative;
+  z-index: 98;
+}
+.select2-results__option{
+  padding: 15px 5px 15px 15px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.select{
+  position: relative;
+  z-index: 98;
+}
+
 /*end select=====================*/
