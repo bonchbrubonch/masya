@@ -29,10 +29,28 @@ $(function () {
     minimumResultsForSearch: -1,
   });
 
-  $(".sex").select2({
-    placeholder: "Не выбрано",
-    minimumResultsForSearch: -1,
+
+  $('.cabinet__item-sex').on('click', function () {
+    $('.cabinet__item-sex').removeClass('active');
+    $(this).addClass('active');
+
+    var textFromSexBlock = $(this).text();
+    $('.cabinet__item-choise').text(textFromSexBlock);
   });
+
+  $('.products__filter-item').on('click', function () {
+    $('.products__filter-item').removeClass('active');
+    $(this).addClass('active');
+
+    var textFromSexBlock = $(this).text();
+    $('.products__filter span').text(textFromSexBlock);
+  });
+
+
+  // $(".sex").select2({
+  //   placeholder: "Не выбрано",
+  //   minimumResultsForSearch: -1,
+  // });
 
   $(".day").select2({
     minimumResultsForSearch: -1,
@@ -48,28 +66,28 @@ $(function () {
 
 
 
-  $('.productt__inner-tab').each(function() {
+  $('.productt__inner-tab').each(function () {
     let ths = $(this);
     ths.find('.productt__item').not(':first').hide();
-    ths.find('.productt__btn').click(function() {
+    ths.find('.productt__btn').click(function () {
       ths.find('.productt__btn').removeClass('active').eq($(this).index()).addClass('active');
       ths.find('.productt__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
 
-  $('.modal__tab-wrap').each(function() {
+  $('.modal__tab-wrap').each(function () {
     let ths = $(this);
     ths.find('.modal__item').not(':first').hide();
-    ths.find('.modal__btn').click(function() {
+    ths.find('.modal__btn').click(function () {
       ths.find('.modal__btn').removeClass('active').eq($(this).index()).addClass('active');
       ths.find('.modal__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
   });
 
-  $('.method-pay__inner-tab').each(function() {
+  $('.method-pay__inner-tab').each(function () {
     let ths = $(this);
     ths.find('.method-pay__item').not(':first').hide();
-    ths.find('.method-pay__btn').click(function() {
+    ths.find('.method-pay__btn').click(function () {
       ths.find('.method-pay__btn').removeClass('active').eq($(this).index()).addClass('active');
       ths.find('.method-pay__item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');

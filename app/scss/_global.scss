@@ -87,7 +87,8 @@ body.lock {
 
   &__list {
     li {
-      display: inline;
+      margin: 0 0 8px 0;
+      display: inline-flex;
       position: relative;
       font-size: 16px;
       line-height: 120%;
@@ -97,13 +98,16 @@ body.lock {
         padding-left: 15px;
 
         &::before {
-          content: ">";
-          font-size: 16px;
-          line-height: 125%;
+          content: "";
+          width: 8px;
+          height: 9px;
           position: absolute;
-          left: 2px;
-          top: 1px;
-          color: rgba(#3E3E3E, .6);
+          left: 0px;
+          top: 5px;
+          background-image: url('../images/dest/icons/arrowbreadcrumbs.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
         }
       }
 

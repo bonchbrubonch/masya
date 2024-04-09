@@ -456,15 +456,41 @@
             <div class="cabinet__item-inner">
               <input type="text" placeholder="Дата рождения">
             </div>
-            <div class="cabinet__item-select">
-              <span>Пол</span>
-              <div class="select">
+            <div class="cabinet__item-select cabinet__item-hover">
+              <div class="cabinet__item-boxx">
+                <span>Пол</span>
+                <div class="cabinet__item-choise">
+                  Не указано
+                </div>
+              </div>
+              <ul class="cabinet__item-drop">
+                <li>
+                  <button class="cabinet__item-sex">
+                    <span></span> Женский
+                  </button>
+                </li>
+                <li>
+                  <button class="cabinet__item-sex">
+                    <span></span> Мужской
+                  </button>
+                </li>
+                <li>
+                  <button class="cabinet__item-sex active">
+                    <span></span> Не указано
+                  </button>
+                </li>
+                <div class="cabinet__item-btns">
+                  <button class="btn btn--white">Отменить</button>
+                  <button class="btn">Подтвердить</button>
+                </div>
+              </ul>
+              <!-- <div class="select">
                 <select class="sex" id="sex" required name="sex">
                   <option></option>
                   <option>Пол2</option>
                   <option>Пол1</option>
                 </select>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="cabinet__item-one">
